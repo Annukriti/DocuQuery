@@ -2,11 +2,11 @@ DocuQuery : Smart Document Assistant
 
 Docker image:
 
-Admin side
+Admin side                                                                                                                              
 docker build -t pdf-reader-admin .                                                                                                                                                      
 docker run -e BUCKET_NAME=annu-chat-bot-demo -v C:\Users\annuk\.aws:/root/.aws -p 8083:8083 -it pdf-reader-admin                                                                                                                              
 
-User side
+User side                                                                                                                              
 docker build -t pdf-reader-client .                                                                                                                              
 docker run -e BUCKET_NAME=annu-chat-bot-demo -v C:\Users\annuk\.aws:/root/.aws -p 8084:8084 -it pdf-reader-client                                                                                                                             
 
@@ -27,13 +27,13 @@ Streamlit – Used to build the interactive web app interface
 AWS Bedrock - Used to access foundational models (LLMs and embedding models)                                                                                                                                                                 
 AWS S3 - Used to download the FAISS index and metadata from cloud storage                                                                                                                                                                 
 LangChain - Framework for combining LLMs with external data sources, prompts, chains, etc.                                                                                                                                                   
-    Bedrock (LLM): Interface to invoke Claude model.                                                                                                                                                                 
-    BedrockEmbeddings: To embed text using Amazon Titan model.                                                                                                                                                                 
-    PromptTemplate: To define the format of the prompt.                                                                                                                                                                 
-    RetrievalQA: To combine the LLM with a vector store for RAG.                                                                                                                                                                 
-    RecursiveCharacterTextSplitter: For breaking long documents into chunks.                                                                                                                                                                 
-    FAISS: Open-source vector database used for storing and retrieving text embeddings.                                                                                                                                                      
-    PyPDFLoader: Utility for loading and parsing PDFs.                                                                                                                                                                 
+       Bedrock (LLM): Interface to invoke Claude model.                                                                                                                                                                 
+       BedrockEmbeddings: To embed text using Amazon Titan model.                                                                                                                                                                 
+       PromptTemplate: To define the format of the prompt.                                                                                                                                                                 
+       RetrievalQA: To combine the LLM with a vector store for RAG.                                                                                                                                                                 
+       RecursiveCharacterTextSplitter: For breaking long documents into chunks.                                                                                                                                                               
+       FAISS: Open-source vector database used for storing and retrieving text embeddings.                                                                                                                                                    
+       PyPDFLoader: Utility for loading and parsing PDFs.                                                                                                                                                                 
 
 Models used:                                                                                                                                                      
 Amazon Titan Embeddings - Used to convert PDF text chunks into dense vector representations for similarity search                                                                                                                            

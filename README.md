@@ -22,7 +22,7 @@ Configure AWS:
 
 ----------
 
-Tech used:
+Tech used:                                                                                                                              
 Streamlit – Used to build the interactive web app interface                                                                                                                                                                               
 AWS Bedrock - Used to access foundational models (LLMs and embedding models)                                                                                                                                                                 
 AWS S3 - Used to download the FAISS index and metadata from cloud storage                                                                                                                                                                 

@@ -75,5 +75,20 @@ The embeddings in the FAISS index allow you to quickly retrieve the most relevan
 the embeddings of these two will be similar enough that FAISS can retrieve the relevant chunk.
 
 ----------
+RAG 
+- It's an AI architecture that combines information retrieval with text generation to improve the quality and accuracy of responses from large language models (LLMs).
+  
+How RAG Works:                                                                                   
+Query Input: A user asks a question.                                                                                   
+Retrieval: The system searches a knowledge base (e.g., documents, PDFs, databases) to find the most relevant text chunks or passages.                                                                                   
+Augmentation: These retrieved texts are then passed along with the user query to the LLM.                                                                                   
+Generation: The LLM uses both the query and the retrieved content to generate a response.                                                                                   
+
+Tools Used in RAG Pipelines:                                                                                   
+Embedding Models (like OpenAI, Cohere, AWS Bedrock) for vectorizing text.                                                                                   
+Vector Stores (like FAISS, Pinecone) for similarity search.                                                                                   
+LLMs (like GPT, Claude) for generating responses.                                                                                   
+
+----------
 
 Reference - https://www.youtube.com/watch?v=KFibP7KnDVM
